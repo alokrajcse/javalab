@@ -1,4 +1,9 @@
-//LAB QUESTION 7
+/* LAB QUESTION 7
+Write a Java program that will evaluate the following exponential series.
+1 + 𝑥 + (x^2)/2!+..
+
+*/
+    
 import java.util.Scanner;
 
 public class Series {
