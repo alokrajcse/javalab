@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class SeriesEvaluator {
+public class Series {
 
     static int fact(int num) {
         int f = 1;
