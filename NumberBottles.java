@@ -1,4 +1,8 @@
-// LAB QUESTION 8
+/* LAB QUESTION 8
+Write a method that takes a number between 0 and 9 as an argument and prints on the
+screen “Number green bottles standing on the wall” (where Number is replaced by the word
+version of the number). If the numeric parameter is 1 then your method should print bottle
+rather than bottles.   */
 public class NumberBottles {
 
     public static void main(String[] args) {
