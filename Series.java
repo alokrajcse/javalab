@@ -1,3 +1,4 @@
+//LAB QUESTION 7
 import java.util.Scanner;
 
 public class Series {
