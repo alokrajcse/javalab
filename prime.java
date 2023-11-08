@@ -1,3 +1,5 @@
+/* LAB QUESTION 3*/
+
 import java.util.Scanner;
 
 public class PrimeChecker {
