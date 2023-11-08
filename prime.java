@@ -1,28 +1,31 @@
-public class PrimeCounter {
+import java.util.Scanner;
+
+public class PrimeChecker {
     public static void main(String[] args) {
-        int startRange = 37;
-        int endRange = 129;
+        Scanner scanner = new Scanner(System.in);
 
-        int count = 0;
+        System.out.print("Enter a number: ");
+        int number = scanner.nextInt();
 
-        for (int num = startRange; num <= endRange; num++) {
-            if (isPrime(num)) {
-                count++;
+        if (number <= 1) {
+            System.out.println(number + " is neither prime nor composite.");
+        } else {
+            boolean isPrime = true;
+
+            for (int i = 2; i <= Math.sqrt(number); i++) {
+                if (number % i == 0) {
+                    isPrime = false;
+                    break;
+                }
+            }
+
+            if (isPrime) {
+                System.out.println(number + " is a prime number.");
+            } else {
+                System.out.println(number + " is a composite number.");
             }
         }
 
-        System.out.println("Number of prime numbers between " + startRange + " and " + endRange + ": " + count);
-    }
-
-    private static boolean isPrime(int num) {
-        if (num <= 1) {
-            return false;
-        }
-        for (int i = 2; i <= Math.sqrt(num); i++) {
-            if (num % i == 0) {
-                return false;
-            }
-        }
-        return true;
+        
     }
 }
